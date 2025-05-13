@@ -1,0 +1,54 @@
+.input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  outline: none;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  font-family: "Raleway", sans-serif;
+  -moz-appearance: textfield;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+  }
+}
+
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 8px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  outline: none;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  resize: vertical;
+  max-height: 180px;
+  font-family: "Raleway", sans-serif;
+
+  &:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+  }
+}
+
+.fileInput {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 16px;
+  color: #666;
+}

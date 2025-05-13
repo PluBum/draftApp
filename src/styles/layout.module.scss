@@ -1,0 +1,134 @@
+.pageWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+.pageContainer {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(33, 150, 243, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.pageHeader {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  padding: 16px 0 8px 0;
+  background: none;
+  border-bottom: 1px solid #f0f0f0;
+  letter-spacing: 0.01em;
+}
+
+.pageContent {
+  padding: 16px;
+  background: #f7fafd;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  font-family: "Raleway", sans-serif;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+  }
+}
+
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  resize: vertical;
+  max-height: 180px;
+  font-family: "Raleway", sans-serif;
+
+  &:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+  }
+}
+
+.fileInput {
+  margin-top: 6px;
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.error {
+  color: #f44336;
+  text-align: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 12px;
+  color: #666;
+  font-size: 14px;
+}

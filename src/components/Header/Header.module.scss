@@ -1,0 +1,69 @@
+.headerBlock {
+  padding: 18px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logoBlock {
+  width: 406px;
+  height: 136px;
+  background-image: url("../../assets/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text {
+  color: #1a3c90;
+  font-family: Raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .logoBlock {
+    width: 300px;
+    height: 100px;
+  }
+
+  .text {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerBlock {
+    padding: 12px 20px;
+  }
+
+  .logoBlock {
+    width: 200px;
+    height: 67px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headerBlock {
+    padding: 8px 12px;
+  }
+
+  .logoBlock {
+    width: 150px;
+    height: 50px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}

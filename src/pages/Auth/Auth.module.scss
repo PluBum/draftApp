@@ -1,0 +1,73 @@
+@import "../../styles/layout.module.scss";
+
+.authWrap {
+  composes: pageWrap;
+}
+
+.authContainer {
+  composes: pageContainer;
+}
+
+.header {
+  composes: pageHeader;
+}
+
+.form {
+  composes: form;
+  padding: 16px;
+  background: #f7fafd;
+}
+
+.input {
+  composes: input;
+}
+
+.inputError {
+  border-color: #f44336;
+
+  &:focus {
+    border-color: #f44336;
+    box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.1);
+  }
+}
+
+.submitButton {
+  composes: button primary fullWidth large from "../../styles/buttons.module.scss";
+}
+
+.error {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: -4px;
+}
+
+.forgotPassword {
+  text-align: center;
+  color: #2196f3;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 8px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #1976d2;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.registerLink {
+  text-align: center;
+  color: #2196f3;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #1976d2;
+  }
+}

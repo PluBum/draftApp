@@ -1,0 +1,58 @@
+@import "../../styles/layout.module.scss";
+
+.sendFormWrap {
+  composes: pageWrap;
+  position: relative;
+}
+
+.sendFormContainer {
+  composes: pageContainer;
+  position: relative;
+}
+
+.title {
+  composes: pageHeader;
+}
+
+.form {
+  composes: form;
+  padding: 16px;
+  background: #f7fafd;
+}
+
+.label {
+  composes: label;
+}
+
+.textarea {
+  composes: textarea;
+}
+
+.input {
+  composes: input;
+}
+
+.fileInput {
+  composes: fileInput;
+}
+
+.button {
+  composes: button primary fullWidth large from "../../styles/buttons.module.scss";
+}
+
+.myApplicationsBtn {
+  composes: button primary from "../../styles/buttons.module.scss";
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  min-width: 160px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+}
